@@ -1,0 +1,12 @@
+{
+  "name": "organizacion-sistema",
+  "version": "1.0.0",
+  "description": "Sistema de organización de tareas para cadetes y tenientes",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

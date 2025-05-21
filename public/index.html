@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Organización</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Organización de Tareas</h1>
+    
+    <div id="loginSection">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <div id="loginMessage"></div>
+        <button id="showRegisterButton">Registrar Cadete</button>
+    </div>
+
+    <div id="registerSection" style="display: none;">
+        <h2>Registrar Cadete</h2>
+        <form id="registerForm">
+            <input type="text" id="newUsername" placeholder="Usuario" required>
+            <input type="password" id="newPassword" placeholder="Contraseña" required>
+            <button type="submit">Registrar</button>
+        </form>
+        <div id="registerMessage"></div>
+        <button id="showLoginButton">Volver a Iniciar Sesión</button>
+    </div>
+
+    <div id="taskSection" style="display: none;">
+        <h2>Crear Nueva Tarea</h2>
+        <form id="tareaForm">
+            <input type="text" id="descripcion" placeholder="Descripción de la tarea" required>
+            <input type="text" id="cadeteAsignar" placeholder="Usuario del Cadete" required>
+            <button type="submit">Asignar Tarea</button>
+        </form>
+        <h2>Tareas Asignadas</h2>
+        <ul id="tareasList"></ul>
+        <h2>Cadetes</h2>
+        <ul id="cadetesList"></ul>
+        <h2>Intercambiar Monedas</h2>
+        <form id="intercambioForm">
+            <input type="text" id="cadeteDe" placeholder="De (Usuario)" required>
+            <input type="text" id="cadeteA" placeholder="A (Usuario)" required>
+            <input type="number" id="cantidad" placeholder="Cantidad" required>
+            <button type="submit">Intercambiar</button>
+        </form>
+        <div id="intercambioMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
